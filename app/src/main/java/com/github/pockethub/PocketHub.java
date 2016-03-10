@@ -18,7 +18,6 @@ package com.github.pockethub;
 
 import android.app.Application;
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import com.alorma.gitskarios.core.client.LogProvider;
 import com.alorma.gitskarios.core.client.LogProviderInterface;
@@ -67,7 +66,6 @@ public class PocketHub extends Application {
             @Override
             public void log(String message) {
                 if (BuildConfig.DEBUG) {
-                    Log.v("RetrofitLog", message);
                 }
             }
         });
